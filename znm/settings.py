@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'core'
+	'core',
+	'corsheaders',
+	'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'znm.urls'
@@ -75,9 +78,13 @@ WSGI_APPLICATION = 'znm.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+	'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'kkmenswear',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
@@ -122,3 +129,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+	'DEFAULT_PERMISSION_CLASSES': [ 'rest_framework.permissions.AllowAny' ]
+}
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_WHITELIST = [
+	'http://localhost:3000'
+]
