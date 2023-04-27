@@ -1,13 +1,10 @@
-#main {
-	display: flex;
+.homepage {
+	padding: 50px;
 }
 .heading {
 	text-align: center;
-	margin-top: 100px;
-	margin-left: 415px;
-	margin-right: 415px;
-	/* font-family: ; */
-	font-size: 90px;
+	margin: 50px auto;
+	font-size: 42px;
 }
 .menswear {
 	text-align: center;
@@ -15,91 +12,38 @@
 	margin-left: auto;
 	margin-right: auto;	
 }
-.box {
-	width: 1180px;
-	height: 580px;
-	background-color: black;
-	margin-top: 200px;
-	margin-bottom: 100px;
-	margin-left: auto;
-	margin-right: auto;	
-}
-.img1 {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 60px;
-    margin-right: 0px;
-}
-.box1{
-	width: 1200px;
-	height: 1000px;
-	background-color: whitesmoke;
-	margin-top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-}
 .img0 {
-	margin-top: 15px;
-	margin-left: 15px;
-	margin-bottom: 15px;
-	margin-right: 15px;
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 100px auto;
+	border: 5px solid black;
 }
-.img2 {
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	margin-right: 0px;
+.row {
+	display: flex;
+	flex-wrap: wrap;
 }
-.img3 {
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	margin-right: 0px;
+.section1{
+	background-color: #FAFAFA;
+	margin: 100px auto 0;
+	width: 100%;
+	max-width: 1200px;
 }
-.img4 {
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	margin-right: 0px;
+.section1 .col {
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding: 20px;
 }
-.img5 {
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	margin-right: 0px;
+.section1 .img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
-.img6 {
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	margin-right: 0px;
-}
-.img7 {
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	margin-right: 0px;
-}
-.img8 {
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	margin-right: 0px;
-}
-@media only screen and (max-width: 768px) {
-	.box1 {
-	  max-width: 768px;
+@media (max-width: 480px) {
+	.section1 .col {
+		flex: 0 0 50%;
+		max-width: 50%;
 	}
 }
-@media only screen and (max-width: 480px) {
-	.box1 {
-	  max-width: 480px;
-	}
-} 
-@keyframes rotate {
-	from {
-	  transform: rotate(360deg);
-	}
-	to {
-	  transform: rotate(0deg);
-	} }

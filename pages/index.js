@@ -14,28 +14,28 @@ export default function Home() {
 			<link rel="icon" href="/favicon.ico" />
 			{/* <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> */}
 			{/* <i  class="fas fa-bars"></i> */}
-			</Head>
-		<main id="styles.main" class="flex-container">
+		</Head>
+		<main className={`${styles.homepage}`}>
 			{/* <h1 className={`${styles.heading}`}>HAZURE</h1> */}
 			<h1 className={`${styles.heading}`}>ZOLL & METER</h1>
 			<div className={`${styles.box}`}>
-			<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
+				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
 			</div>
 			<h2 className={`${styles.menswear}`}>MEANSWEAR 23</h2>
 			
-			<div className={`${styles.box1}`}>
-				
-			<Image id="img1" className={`${styles.img1}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
-			<Image id="img2" className={`${styles.img2}`} src="/img2.webp" alt="cloth" width="250" height="400"/>
-			<Image id="img3" className={`${styles.img3}`} src="/img3.webp" alt="cloth" width="250" height="400"/>
-			<Image id="img4" className={`${styles.img4}`} src="/img4.webp" alt="cloth" width="250" height="400"/> <br></br>
-			<Image id="img5" className={`${styles.img5}`} src="/img5.webp" alt="cloth" width="250" height="400"/>
-			<Image id="img6" className={`${styles.img6}`} src="/img6.webp" alt="cloth" width="250" height="400"/>
-			<Image id="img7" className={`${styles.img7}`} src="/img7.jpg"  alt="cloth" width="250" height="400"/>
-			<Image id="img8" className={`${styles.img8}`} src="/img8.webp" alt="cloth" width="250" height="400"/>
-				
+			<div className={`${styles.section1} ${styles.row}`}>
+				<div className={`${styles.col}`}>
+					<Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
+					<p>Img1</p>
+				</div>
+				<div className={`${styles.col}`}><Image id="img2" className={`${styles.img}`} src="/img2.webp" alt="cloth" width="250" height="400"/></div>
+				<div className={`${styles.col}`}><Image id="img3" className={`${styles.img}`} src="/img3.webp" alt="cloth" width="250" height="400"/></div>
+				<div className={`${styles.col}`}><Image id="img4" className={`${styles.img}`} src="/img4.webp" alt="cloth" width="250" height="400"/></div>
+				<div className={`${styles.col}`}><Image id="img5" className={`${styles.img}`} src="/img5.webp" alt="cloth" width="250" height="400"/></div>
+				<div className={`${styles.col}`}><Image id="img6" className={`${styles.img}`} src="/img6.webp" alt="cloth" width="250" height="400"/></div>
+				<div className={`${styles.col}`}><Image id="img7" className={`${styles.img}`} src="/img7.jpg"  alt="cloth" width="250" height="400"/></div>
+				<div className={`${styles.col}`}><Image id="img8" className={`${styles.img}`} src="/img8.webp" alt="cloth" width="250" height="400"/></div>
 			</div>
-			
 		</main>
 		{/* <main className={`${styles.main} ${inter.className}`}>
 			<div className={styles.description}>
