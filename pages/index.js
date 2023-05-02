@@ -24,10 +24,7 @@ export default function Home() {
 			<h2 className={`${styles.menswear}`}>MEANSWEAR 23</h2>
 			
 			<div className={`${styles.section1} ${styles.row}`}>
-				<div className={`${styles.col}`}>
-					<Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
-					<p>Img1</p>
-				</div>
+				<div className={`${styles.col}`}><Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/></div>
 				<div className={`${styles.col}`}><Image id="img2" className={`${styles.img}`} src="/img2.webp" alt="cloth" width="250" height="400"/></div>
 				<div className={`${styles.col}`}><Image id="img3" className={`${styles.img}`} src="/img3.webp" alt="cloth" width="250" height="400"/></div>
 				<div className={`${styles.col}`}><Image id="img4" className={`${styles.img}`} src="/img4.webp" alt="cloth" width="250" height="400"/></div>

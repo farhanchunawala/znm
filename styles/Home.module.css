@@ -19,6 +19,8 @@
 	display: block;
 	margin: 100px auto;
 	border: 5px solid black;
+	min-height: 175px;
+	min-width: 275px;
 }
 .row {
 	display: flex;
@@ -40,6 +42,9 @@
 	height: auto;
 	display: block;
 	margin: 0 auto;
+	min-width: 100px;
+	display: flex;
+	flex-wrap: wrap;
 }
 @media (max-width: 480px) {
 	.section1 .col {
