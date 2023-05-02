@@ -1,0 +1,32 @@
+Website {
+	Page1: Home Page []
+	Page2: Inner Page []
+	Header:
+	Side Nav:
+}
+
+Customer Management System {
+	Page1: User Listing [
+		Filter Regular Customers
+	]
+	Page2: Inner Page [
+		Customer Info Popup
+		Body Measurement Section
+		Fit Section
+		Style Section
+		Design Section
+		MISC: [Sketch Cutting Button, Cutting Slip Button, Info Slip Button]
+		Analytics: []
+	]
+	Page3: Sketch Cutting Page
+	Page4: Cutting Slip Page
+	Page5: Info Slip Page
+}
+
+Fabric Inventory {
+	Page1: Fabric Listing [
+		Fabric Info Popup
+	]
+}
+
+Design Collection {}
