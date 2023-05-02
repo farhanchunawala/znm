@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+var slideIndex = 0;
+showSlides();
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,30 +16,85 @@ export default function Home() {
 			<link rel="icon" href="/favicon.ico" />
 			{/* <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> */}
 			{/* <i  class="fas fa-bars"></i> */}
+			{/* function showSlides() {
+                 var i;
+                var slides = document.getElementsByClassName("slide");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                } */}
 		</Head>
 		<main className={`${styles.homepage}`}>
 			{/* <h1 className={`${styles.heading}`}>HAZURE</h1> */}
-			<h1 className={`${styles.heading}`}>ZOLL & METER</h1>
-			<div className={`${styles.box}`}>
-				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
+			<h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1>
+			<div class="slideshow-container"className={`${styles.slideshow}`}>
+				<Image class="slide" className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
+				<Image class="slide" className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
+				<Image class="slide" className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
 			</div>
-			<h2 className={`${styles.menswear}`}>MEANSWEAR 23</h2>
+			<h2 className={`${styles.content} ${styles.text}`}>MENSWEAR 23</h2>
 			
 			<div className={`${styles.section1} ${styles.row}`}>
-				<div className={`${styles.col}`}>
-					<Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
-					<p>Img1</p>
+				<div className={`${styles.col}`}><Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
+			        <p className={`${styles.imgtext}`}>Morning Mist</p>
 				</div>
-				<div className={`${styles.col}`}><Image id="img2" className={`${styles.img}`} src="/img2.webp" alt="cloth" width="250" height="400"/></div>
-				<div className={`${styles.col}`}><Image id="img3" className={`${styles.img}`} src="/img3.webp" alt="cloth" width="250" height="400"/></div>
-				<div className={`${styles.col}`}><Image id="img4" className={`${styles.img}`} src="/img4.webp" alt="cloth" width="250" height="400"/></div>
-				<div className={`${styles.col}`}><Image id="img5" className={`${styles.img}`} src="/img5.webp" alt="cloth" width="250" height="400"/></div>
-				<div className={`${styles.col}`}><Image id="img6" className={`${styles.img}`} src="/img6.webp" alt="cloth" width="250" height="400"/></div>
-				<div className={`${styles.col}`}><Image id="img7" className={`${styles.img}`} src="/img7.jpg"  alt="cloth" width="250" height="400"/></div>
-				<div className={`${styles.col}`}><Image id="img8" className={`${styles.img}`} src="/img8.webp" alt="cloth" width="250" height="400"/></div>
+				<div className={`${styles.col}`}><Image id="img2" className={`${styles.img}`} src="/img2.webp" alt="cloth" width="250" height="400"/>
+				    <p className={`${styles.imgtext}`}>pine Green</p>
+				</div>
+				<div className={`${styles.col}`}><Image id="img3" className={`${styles.img}`} src="/img3.webp" alt="cloth" width="250" height="400"/>
+				    <p className={`${styles.imgtext}`}>Seafoam Green</p>
+				</div>		
+				<div className={`${styles.col}`}><Image id="img4" className={`${styles.img}`} src="/img4.webp" alt="cloth" width="250" height="400"/>
+				   <p className={`${styles.imgtext}`}>Dusty Yale</p>
+				</div>
+				<div className={`${styles.col}`}><Image id="img5" className={`${styles.img}`} src="/img5.webp" alt="cloth" width="250" height="400"/>
+				   <p className={`${styles.imgtext}`}>Sterling Palms</p>
+				</div>
+				<div className={`${styles.col}`}><Image id="img6" className={`${styles.img}`} src="/img6.webp" alt="cloth" width="250" height="400"/>
+				   <p className={`${styles.imgtext}`}>Vintage Cobalt</p>
+				</div>   
+				<div className={`${styles.col}`}><Image id="img7" className={`${styles.img}`} src="/img7.jpg"  alt="cloth" width="250" height="400"/>
+				   <p className={`${styles.imgtext}`}>Castlaton Shine</p>
+				</div>
+				<div className={`${styles.col}`}><Image id="img8" className={`${styles.img}`} src="/img8.webp" alt="cloth" width="250" height="400"/>
+			       <p className={`${styles.imgtext}`}>Chanterelle beige</p>
+				</div>
+				<button className={`${styles.viewall}`} type="button" onclick="myFunction()"> VIEW ALL </button>
 			</div>
+			<h2 className={`${styles.content2} ${styles.text}`}>MARASIM</h2>
+			
+			<div className={`${styles.section2} ${styles.row}`}>
+			    <div className={`${styles.col}`}><Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
+				    <p className={`${styles.imgtext}`}>xyz</p> 
+				</div>
+				<div className={`${styles.col}`}><Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
+				    <p className={`${styles.imgtext}`}>xyz</p> 
+				</div>
+				<div className={`${styles.col}`}><Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
+				    <p className={`${styles.imgtext}`}>xyz</p> 
+				</div>
+				<div className={`${styles.col}`}><Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
+				    <p className={`${styles.imgtext}`}>xyz</p> 
+				</div>  
+				<button className={`${styles.viewall}`} type="button" onclick="myFunction()"> VIEW ALL </button>  	
+		    </div>
 		</main>
-		{/* <main className={`${styles.main} ${inter.className}`}>
+		{/* 
+		
+		<div class="slideshow-container">
+  <img src="image1.jpg" class="slide">
+  <img src="image2.jpg" class="slide">
+  <img src="image3.jpg" class="slide">
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<main className={`${styles.main} ${inter.className}`}>
 			<div className={styles.description}>
 			<p>
 				Get started by editing&nbsp;
