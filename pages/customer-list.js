@@ -8,10 +8,12 @@ export default function Home() {
 	return (
 		<>
 		<Head>
-			<title>Create Next App</title>
+			<title>Customer list</title>
 		</Head>
-		<main className={`${styles.trial}`}>
-			
+		<main className={`${styles.homepage}`}>
+			<div class name={`${styles.box}`}>
+			    
+		    </div>
 		</main>
 		</>
 	)
