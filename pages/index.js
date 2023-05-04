@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
+import DisplayGallery from '../components/DisplayGallery'
 
 export default function Home() {
 	return (
@@ -18,37 +19,8 @@ export default function Home() {
 			<div className={`${styles.box} ${styles.row}`}>
 				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
 			</div>
-			<h2 className={`${styles.content} ${styles.text}`}>MENSWEAR 23</h2>
-			
-			<div className={`${styles.section1} ${styles.row}`}>
-				<div className={`${styles.col}`}><Image id="img1" className={`${styles.img}`} src="/img1.webp" alt="cloth" width="250" height="400"/>
-			        <p className={`${styles.imgtext}`}>Morning Mist</p>
-				</div>
-				<div className={`${styles.col}`}><Image id="img2" className={`${styles.img}`} src="/img2.webp" alt="cloth" width="250" height="400"/>
-				    <p className={`${styles.imgtext}`}>pine Green</p>
-				</div>
-				<div className={`${styles.col}`}><Image id="img3" className={`${styles.img}`} src="/img3.webp" alt="cloth" width="250" height="400"/>
-				    <p className={`${styles.imgtext}`}>Seafoam Green</p>
-				</div>		
-				<div className={`${styles.col}`}><Image id="img4" className={`${styles.img}`} src="/img4.webp" alt="cloth" width="250" height="400"/>
-				   <p className={`${styles.imgtext}`}>Dusty Yale</p>
-				</div>
-				<div className={`${styles.col}`}><Image id="img5" className={`${styles.img}`} src="/img5.webp" alt="cloth" width="250" height="400"/>
-				   <p className={`${styles.imgtext}`}>Sterling Palms</p>
-				</div>
-				<div className={`${styles.col}`}><Image id="img6" className={`${styles.img}`} src="/img6.webp" alt="cloth" width="250" height="400"/>
-				   <p className={`${styles.imgtext}`}>Vintage Cobalt</p>
-				</div>   
-				<div className={`${styles.col}`}><Image id="img7" className={`${styles.img}`} src="/img7.jpg"  alt="cloth" width="250" height="400"/>
-				   <p className={`${styles.imgtext}`}>Castlaton Shine</p>
-				</div>
-				<div className={`${styles.col}`}><Image id="img8" className={`${styles.img}`} src="/img8.webp" alt="cloth" width="250" height="400"/>
-			       <p className={`${styles.imgtext}`}>Chanterelle beige</p>
-				</div>
-				<button className={`${styles.viewall}`} type="button" onclick="myFunction()"> VIEW ALL </button>
-			</div>
+			<DisplayGallery></DisplayGallery>
 			<h2 className={`${styles.content2} ${styles.text}`}>MARASIM</h2>
-			
 			<div className={`${styles.section2} ${styles.row}`}>
 			    <div className={`${styles.col}`}><Image id="mrsm1" className={`${styles.img}`} src="/mrsm1.webp" alt="cloth" width="250" height="400"/>
 				    <p className={`${styles.imgtext}`}>Sartan</p> 
@@ -65,117 +37,6 @@ export default function Home() {
 				<button className={`${styles.viewall}`} type="button" onclick="myFunction()"> VIEW ALL </button>  	
 		    </div>
 		</main>
-		{/* 
-		
-		<div class="slideshow-container">
-  <img src="image1.jpg" class="slide">
-  <img src="image2.jpg" class="slide">
-  <img src="image3.jpg" class="slide">
-</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<main className={`${styles.main} ${inter.className}`}>
-			<div className={styles.description}>
-			<p>
-				Get started by editing&nbsp;
-				<code className={styles.code}>pages/index.js</code>
-			</p>
-			<div>
-				<a
-				href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-				target="_blank"
-				rel="noopener noreferrer"
-				>
-				By{' '}
-				<Image
-					src="/vercel.svg"
-					alt="Vercel Logo"
-					className={styles.vercelLogo}
-					width={100}
-					height={24}
-					priority
-				/>
-				</a>
-			</div>
-			</div>
-
-			<div className={styles.center}>
-			<Image
-				className={styles.logo}
-				src="/next.svg"
-				alt="Next.js Logo"
-				width={180}
-				height={37}
-				priority
-			/>
-			</div>
-
-			<div className={styles.grid}>
-			<a
-				href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-				className={styles.card}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<h2>
-				Docs <span>-&gt;</span>
-				</h2>
-				<p>
-				Find in-depth information about Next.js features and&nbsp;API.
-				</p>
-			</a>
-
-			<a
-				href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-				className={styles.card}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<h2>
-				Learn <span>-&gt;</span>
-				</h2>
-				<p>
-				Learn about Next.js in an interactive course with&nbsp;quizzes!
-				</p>
-			</a>
-
-			<a
-				href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-				className={styles.card}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<h2>
-				Templates <span>-&gt;</span>
-				</h2>
-				<p>
-				Discover and deploy boilerplate example Next.js&nbsp;projects.
-				</p>
-			</a>
-
-			<a
-				href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-				className={styles.card}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<h2>
-				Deploy <span>-&gt;</span>
-				</h2>
-				<p>
-				Instantly deploy your Next.js site to a shareable URL
-				with&nbsp;Vercel.
-				</p>
-			</a>
-			</div>
-		</main> */}
 		</>
 	)
 }
