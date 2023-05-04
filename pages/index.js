@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 import DisplayGallery from '../components/DisplayGallery'
-import DisplayGallery2 from '../components/DisplayGallery2'
 
 export default function Home() {
 	return (
@@ -21,8 +20,7 @@ export default function Home() {
 				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
 			</div>
 			<DisplayGallery></DisplayGallery>
-			<DisplayGallery2></DisplayGallery2>
-
+			
 		</main>
 		</>
 	)
