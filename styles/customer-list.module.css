@@ -1,0 +1,18 @@
+.box {
+	background-color: gold;
+	height: auto;
+	min-height: 60px;
+	font-size: 25px;
+	width: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.label {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+.input {
+	/* background-color: aqua; */
+	height: 850px;
+	width: 100%;
+}

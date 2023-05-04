@@ -11,4 +11,8 @@
 .link {
 	margin-left: 30spx;
 	margin-right: 30px;
+	text-decoration: none;
+	color: black;
+	font-style: normal;
+	font-family: 'Inter', sans-serif;
 }
