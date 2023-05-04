@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 import DisplayGallery from '../components/DisplayGallery'
+import DisplayGallery2 from '../components/DisplayGallery2'
 
 export default function Home() {
 	return (
@@ -15,27 +16,13 @@ export default function Home() {
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
 		<main className={`${styles.homepage}`}>
-			<h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1>
+			{/* <h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1> */}
 			<div className={`${styles.box} ${styles.row}`}>
 				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
 			</div>
 			<DisplayGallery></DisplayGallery>
-			<h2 className={`${styles.content2} ${styles.text}`}>MARASIM</h2>
-			<div className={`${styles.section2} ${styles.row}`}>
-			    <div className={`${styles.col}`}><Image id="mrsm1" className={`${styles.img}`} src="/mrsm1.webp" alt="cloth" width="250" height="400"/>
-				    <p className={`${styles.imgtext}`}>Sartan</p> 
-				</div>
-				<div className={`${styles.col}`}><Image id="mrsm2" className={`${styles.img}`} src="/mrsm2.webp" alt="cloth" width="250" height="400"/>
-				    <p className={`${styles.imgtext}`}>Hooth</p> 
-				</div>
-				<div className={`${styles.col}`}><Image id="mrsm3" className={`${styles.img}`} src="/mrsm3.webp" alt="cloth" width="250" height="400"/>
-				    <p className={`${styles.imgtext}`}>Yakoot</p> 
-				</div>
-				<div className={`${styles.col}`}><Image id="mrsm4" className={`${styles.img}`} src="/mrsm4.webp" alt="cloth" width="250" height="400"/>
-				    <p className={`${styles.imgtext}`}>Akrab</p> 
-				</div>  
-				<button className={`${styles.viewall}`} type="button" onclick="myFunction()"> VIEW ALL </button>  	
-		    </div>
+			<DisplayGallery2></DisplayGallery2>
+
 		</main>
 		</>
 	)

@@ -1,0 +1,14 @@
+.box {
+	background-color: lightgreen;
+	width: 100%;
+	min-height: 100px;
+}
+.heading {
+	text-align: center;
+	padding-top:15px ;
+	font-size: 55px;
+}
+.link {
+	margin-left: 30spx;
+	margin-right: 30px;
+}

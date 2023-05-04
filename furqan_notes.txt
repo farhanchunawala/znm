@@ -1,2 +1,11 @@
+navigation bar {
+	home
+	
+}
+
 things to be made
-navigation background
+
+navigation bar
+section 3 (eid)
+section 4 (gallery)
+section 5 (wedding collection)
