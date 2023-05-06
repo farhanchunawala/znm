@@ -1,18 +1,20 @@
 .box {
-	background-color: lightgreen;
+	/* background-color: lightgreen; */
 	width: 100%;
+	height: auto;
 	min-height: 100px;
+	display: flex;
+	justify-content: space-evenly;
+    padding-top: 20px;	
 }
 .heading {
 	text-align: center;
-	padding-top:15px ;
 	font-size: 55px;
 }
 .link {
-	margin-left: 30spx;
-	margin-right: 30px;
+	/* margin-left: 30px;
+	margin-right: 30px; */
 	text-decoration: none;
 	color: black;
-	font-style: normal;
-	font-family: 'Inter', sans-serif;
+	font-weight: 600;
 }

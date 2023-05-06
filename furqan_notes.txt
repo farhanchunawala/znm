@@ -1,11 +1,18 @@
-navigation bar {
-	home
-	
-}
-
 things to be made
 
+view all button {
+	funcntion on click open new file
+}
+customer list {
+	small conatainers
+	small icon
+	tables
+}
+
+DISPLAY {
 navigation bar
+section 2 (marasim)
 section 3 (eid)
 section 4 (gallery)
 section 5 (wedding collection)
+}

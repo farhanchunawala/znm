@@ -4,10 +4,10 @@ import Link from 'next/link'
  
 const Navbar = () => {
     return (
-	<div className={`${styles.box}`}>
+	<div className={`${styles.main}`}>
 		<h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1>
         <nav className={styles.mainnav}>
-            <ul>
+            <div className={`${styles.box}`}>
                 <Link id="homelink" className={`${styles.link}`} href='/'>Home</Link>
 				<Link id="CLlink" className={`${styles.link}`} href='/customer-list'>Customer List</Link>
 				<Link id="m23link" className={`${styles.link}`} href='/'>Luxury Unstitched</Link>
@@ -18,7 +18,7 @@ const Navbar = () => {
 				<Link id="CLlink" className={`${styles.link}`} href='/'>Glossary</Link>
 				<Link id="CLlink" className={`${styles.link}`} href='/'>Accessories</Link>
 				<Link id="CLlink" className={`${styles.link}`} href='/'>Contact Us</Link>
-            </ul>
+            </div>
         </nav>
 	</div>
     )

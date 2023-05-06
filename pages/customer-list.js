@@ -10,7 +10,7 @@ export default function Home() {
 		<Head>
 			<title>Customer list</title>
 		</Head>
-		<main className={`${styles.homepage}`}>
+		<main className={`${styles.main}`}>
 			<div className={`${styles.box}`}>
 			    <label className={`${styles.label}`}>No.</label>
 				<label className={`${styles.label}`}>fatima</label>
@@ -21,24 +21,48 @@ export default function Home() {
 				<label className={`${styles.label}`}>abbu</label>
 				<label className={`${styles.label}`}>family</label>
 		    </div>
-			<form className={`${styles.input}`}>
+				{/* <form className={`${styles.input}`}> */}
+				{/* <label className={`${styles.field}`} htmlFor="input-field"></label>
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} />
 				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} />
 				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} />
 				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} />
 				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} />
 				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} />
 				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} />
 				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
-				<label className={`${styles.field}`} htmlFor="input-field"></label>
-				<input id="input-field" type="text" style={{ width: "90px", height: "40px" }} />
-			</form>
+				<input id="input-field" type="text" style={{ width: "100px", height: "40px" }} /> */}
+				{/* </form> */}
+			<div className={`${styles.table}`}>
+				<p>hi</p>
+			</div> <br></br>
+			<div className={`${styles.table}`}>
+			    <p>hi</p>
+			</div> <br></br>
+			<div className={`${styles.table}`}>
+			    <p>hi</p>
+			</div> <br></br>
+			<div className={`${styles.table}`}>
+				<p>hi</p>
+			</div> <br></br>
+			<div className={`${styles.table}`}>
+				<p>hi</p>
+			</div> <br></br>
+			<div className={`${styles.table}`}>
+				<p>hi</p>
+			</div> <br></br>
+			<div className={`${styles.table}`}>
+				<p>hi</p>
+			</div> <br></br>
+			<div className={`${styles.table}`}>
+				<p>hi</p>
+			</div> <br></br>
 		</main>
 		</>
 	)

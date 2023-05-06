@@ -10,9 +10,23 @@
 .label {
 	margin-right: 30px;
 	margin-left: 30px;
+	color: black;
 }
 .input {
 	/* background-color: aqua; */
 	height: 850px;
 	width: 100%;
+}
+.table {
+	background-color: #A8A8A8;
+	/* position: absolute; */
+	width: 1300px;
+	height: 100px;
+	/* padding-top: 20px;
+	padding-bottom: 20px; */
+	justify-content: center;
+	/* display: flex;
+	flex-wrap: wrap; */
+	border-radius: 20px;
+	padding-left: 20px;
 }
