@@ -25,36 +25,99 @@ export default function Home() {
 				<div className={`${styles.container}`}>
 					<div className={`${styles.table}`}>
 						<div className={`${styles.text}`}>
-							01
-							Furqan Chunawala
-							7738245067
-							Farhan Chunawala
-							Faizan Chunawala
-							kurta salwar
-							100,000
-							20%
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
 						</div>
 					</div> <br></br>
 					<div className={`${styles.table}`}>
-						1234567890
+					    <div className={`${styles.text}`}>
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
+						</div>
 					</div> <br></br>
 					<div className={`${styles.table}`}>
-						1234567890
+						<div className={`${styles.text}`}>
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
+						</div>
 					</div> <br></br>
 					<div className={`${styles.table}`}>
-						1234567890
+						<div className={`${styles.text}`}>
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
+						</div>
 					</div> <br></br>
 					<div className={`${styles.table}`}>
-						1234567890
+						<div className={`${styles.text}`}>
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
+						</div>
 					</div> <br></br>
 					<div className={`${styles.table}`}>
-						1234567890
+						<div className={`${styles.text}`}>
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
+						</div>
 					</div> <br></br>
 					<div className={`${styles.table}`}>
-						1234567890
+						<div className={`${styles.text}`}>
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
+						</div>
 					</div> <br></br>
 					<div className={`${styles.table}`}>
-						1234567890
+						<div className={`${styles.text}`}>
+							<p>01</p>
+							<p>Furqan Chunawala</p>
+							<p>7738245067</p>
+							<p>Farhan Chunawala</p>
+							<p>Faizan Chunawala</p>
+							<p>kurta salwar</p>
+							<p>100,000</p>
+							<p>20%</p>
+						</div>
 					</div> <br></br>
 				</div>
 			</div>	

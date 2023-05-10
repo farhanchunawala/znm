@@ -1,18 +1,24 @@
-.box {
-	/* background-color: lightgreen; */
-	width: 100%;
-	height: auto;
-	min-height: 100px;
-	display: flex;
-	justify-content: space-evenly;
-    padding-top: 20px;	
-}
-.heading {
-	text-align: center;
-	font-size: 55px;
-}
-.link {
-	text-decoration: none;
-	color: black;
-	font-weight: 600;
+.main {
+	.box {
+		/* background-color: lightgreen; */
+		width: 100%;
+		height: auto;
+		min-height: 100px;
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 20px;
+		
+		.link {
+			text-decoration: none;
+			color: black;
+			font-weight: 600;
+		}
+	}
+	.heading {
+		text-align: center;
+		padding-top: 40px;
+		font-size: 90px;
+		padding-bottom: 30px;
+	}
+	
 }
