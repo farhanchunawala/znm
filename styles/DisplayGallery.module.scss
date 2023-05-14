@@ -91,9 +91,20 @@
 		max-width: 50%;
 	}
 }
+@media (max-width: 720px) {
+	.section1 .col {
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+}
+@media (max-width: 720px) {
+	.imgtext {
+		font-size: 18px;
+	}
+}
+ 
 @media (max-width: 480px) {
-	.section2 .col {
-		flex: 0 0 50%;
-		max-width: 50%;
+	.imgtext {
+		font-size: 9px;
 	}
 }
