@@ -1,6 +1,6 @@
 @import 'variables';
 
-@mixin text-style($font-size:14px, $line-height:1.2, $font-weight:400) {
+@mixin text-style($font-size:14px, $line-height:1, $font-weight:revert) {
 	font-size: $font-size;
 	line-height: $line-height;
 	font-weight: $font-weight;

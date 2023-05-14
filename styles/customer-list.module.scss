@@ -1,10 +1,10 @@
 .main {
 	.list {
 		.box {
+			// @include text-style(30px, 1.2, 500);
 			background-color: gold;
 			height: auto;
 			min-height: 60px;
-			font-size: 25px;
 			width: auto;
 			padding-top: 15px;
 			padding-bottom: 15px;
