@@ -1,5 +1,7 @@
+@import 'mixins';
+
 .homepage {
-	padding: 30px;
+	// padding: 30px;
 }
 .img0 {
 	max-width: 286px;
@@ -14,6 +16,11 @@
 	max-height: 204;
 }
 
+@media (min-width: $screen-sm) {
+	.homepage {
+		padding: 32px;
+	}
+}
 // .heading {
 	// 	text-align: center;
 	// 	margin: 50px auto;
