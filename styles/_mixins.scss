@@ -1,12 +1,12 @@
 @import 'variables';
 
-@mixin text-style($font-size:14px, $line-height:1, $font-weight:revert) {
+@mixin text-style($font-size:null, $line-height:null, $font-weight:null) {
 	font-size: $font-size;
 	line-height: $line-height;
 	font-weight: $font-weight;
 }
 
-@mixin flexbox($flex-wrap:nowrap, $flex-direction:row, $justify-content:flex-start, $align-items:stretch, $align-content:stretch) {
+@mixin flexbox($flex-wrap:null, $flex-direction:null, $justify-content:null, $align-items:null, $align-content:null) {
 	display: flex;
 	flex-wrap: $flex-wrap;				//https://www.w3schools.com/cssref/playdemo.php?filename=playcss_flex-wrap
 	flex-direction: $flex-direction;	//https://www.w3schools.com/cssref/playdemo.php?filename=playcss_flex-direction
@@ -15,7 +15,7 @@
 	align-content: $align-content;		//https://www.w3schools.com/cssref/playdemo.php?filename=playcss_align-content
 }
 
-@mixin flex-item($width:auto, $flex-grow:0, $flex-shrink:0) {
+@mixin flex-item($width:null, $flex-grow:null, $flex-shrink:null) {
 	flex-grow: $flex-grow;
 	flex-shrink: $flex-shrink;
 	flex-basis: $width;
