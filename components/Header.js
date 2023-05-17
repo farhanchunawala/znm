@@ -7,7 +7,9 @@ import Link from 'next/link'
 const Header = () => {
     return (
 	<div className={`${styles.main}`}>
-		
+		<>
+			{/* <Navbar></Navbar> */}
+		</>
 	</div>
     )
 }

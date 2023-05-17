@@ -17,7 +17,7 @@ export default function Home() {
 		<main className={`${styles.homepage}`}>
 			{/* <h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1> */}
 			<div className={`${styles.box} ${styles.row}`}>
-				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1150" height="550"/>
+				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="205" height="286" priority={true} />
 			</div>
 			<DisplayGallery></DisplayGallery>
 			
