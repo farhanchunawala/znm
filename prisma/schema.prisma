@@ -1,0 +1,176 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model cust {
+  sr         Int     @id
+  name       String  @default("0") @db.VarChar(40)
+  surname    String? @default("0") @db.VarChar(30)
+  mobile_no1 BigInt? @default(0)
+  mobile_no2 BigInt? @default(0)
+  mobile_no3 BigInt? @default(0)
+}
+
+model entry {
+  garb_id       Int       @id
+  sr            Int
+  entry_date    DateTime? @default(now()) @db.Timestamp(0)
+  garbtype      String    @db.VarChar(20)
+  style         String?   @db.VarChar(30)
+  fit           String?   @db.VarChar(30)
+  pairing       String?   @db.VarChar(20)
+  description   String?   @db.VarChar(20)
+  submit_date   DateTime? @db.Timestamp(0)
+  stitching_sp  Int?
+  stitching_spo String?   @db.VarChar(30)
+  stitching_spd Int?
+  fabric_id     String?   @db.VarChar(30)
+  pana          Float?    @db.Float
+  clothln       Float?    @db.Float
+  fabric_sp     Int?
+  fabric_spo    String?   @db.VarChar(30)
+  fabric_spd    Int?
+  pattern_id    String?   @db.VarChar(30)
+  pattern_sp    Int?
+  pattern_spo   String?   @db.VarChar(30)
+  pattern_spd   Int?
+  emb_id        String?   @db.VarChar(30)
+  emb_sp        Int?
+  emb_spo       String?   @db.VarChar(30)
+  emb_spd       Int?
+}
+
+model fabric {
+  fabric_id   Int     @id
+  id_code     String? @db.VarChar(30)
+  brand       String? @db.VarChar(30)
+  name        String? @db.VarChar(30)
+  fabric_type String? @db.VarChar(30)
+  color       String? @db.VarChar(30)
+  texture     String? @db.VarChar(30)
+  composition String? @db.VarChar(30)
+  supplier    String? @db.VarChar(30)
+  cp          Int?
+  fp          Int?
+}
+
+model fabricpiece {
+  piece_id  Int     @id @default(autoincrement())
+  fabric_id String? @db.VarChar(30)
+  location  String? @db.VarChar(30)
+  pana      Float?  @db.Float
+  clothln   Float?  @db.Float
+}
+
+model fit {
+  sr                 Int
+  save_date          DateTime? @default(now()) @db.Timestamp(0)
+  garbtype           String    @db.VarChar(20)
+  fit                String    @db.VarChar(20)
+  length             Float?    @db.Float
+  sleeve_ln          Float?    @db.Float
+  pocket_down        Float?    @db.Float
+  hala               Float?    @db.Float
+  t_chest            Float?    @db.Float
+  t_stomach          Float?    @db.Float
+  t_seat             Float?    @db.Float
+  t_bottom           Float?    @db.Float
+  collar             Float?    @db.Float
+  cuff_br            Float?    @db.Float
+  fork_ln            Float?    @db.Float
+  fork_losing        Float?    @db.Float
+  pleats             Float?    @db.Float
+  thigh_losing       Float?    @db.Float
+  lower_thigh_losing Float?    @db.Float
+  calf_losing        Float?    @db.Float
+  bottom             Float?    @db.Float
+  cuttingfactor      Float?    @db.Float
+
+  @@id([sr, garbtype, fit])
+}
+
+model meas {
+  sr             Int       @id
+  measure_date   DateTime? @default(now()) @db.Timestamp(0)
+  shoulder_ln    Float?    @db.Float
+  neck           Float?    @db.Float
+  pec            Float?    @db.Float
+  delt_ln        Float?    @db.Float
+  delt           Float?    @db.Float
+  biceps_ln      Float?    @db.Float
+  biceps         Float?    @db.Float
+  forearm_ln     Float?    @db.Float
+  forearm        Float?    @db.Float
+  arm_ln         Float?    @db.Float
+  wrist          Float?    @db.Float
+  chest_ln       Float?    @db.Float
+  chest          Float?    @db.Float
+  stomach_ln     Float?    @db.Float
+  stomach        Float?    @db.Float
+  seat_ln        Float?    @db.Float
+  seat           Float?    @db.Float
+  knee_ln        Float?    @db.Float
+  waist          Float?    @db.Float
+  thigh_ln       Float?    @db.Float
+  thigh          Float?    @db.Float
+  calf_ln        Float?    @db.Float
+  calf           Float?    @db.Float
+  ground_ln      Float?    @db.Float
+  ankle          Float?    @db.Float
+  half_delt      Float?    @db.Float
+  lat            Float?    @db.Float
+  lower_thigh_ln Float?    @db.Float
+  lower_thigh    Float?    @db.Float
+}
+
+model offr {
+  ofr_id    Int     @id @default(autoincrement())
+  sr        Int?
+  ofr_type  String? @db.VarChar(30)
+  disc      Int?
+  ofr_code  String? @db.VarChar(30)
+  ofr_start String? @db.VarChar(30)
+  ofr_end   String? @db.VarChar(30)
+}
+
+model style {
+  sr            Int
+  save_date     DateTime? @default(now()) @db.Timestamp(0)
+  garbtype      String    @db.VarChar(20)
+  style         String    @db.VarChar(20)
+  fit           String?   @db.VarChar(20)
+  bottom_type   String?   @db.VarChar(20)
+  collar_type   String?   @db.VarChar(20)
+  cuff_ln       Float?    @db.Float
+  cuff_type     String?   @db.VarChar(20)
+  pocket_type   String?   @db.VarChar(20)
+  shoulder_type String?   @db.VarChar(20)
+  taweez_type   String?   @db.VarChar(20)
+  belt_type     String?   @db.VarChar(20)
+  chainfly      String?   @db.VarChar(20)
+  pocket        Int?
+  backpocket    Int?
+  watchpocket   Int?
+  crease        String?   @db.VarChar(20)
+  note1         String?   @db.VarChar(100)
+  note2         String?   @db.VarChar(100)
+  note3         String?   @db.VarChar(100)
+
+  @@id([sr, garbtype, style])
+}
+
+model task {
+  garb_id  Int  @id
+  cutting  Int? @default(0)
+  sewing   Int? @default(0)
+  kaj      Int? @default(0)
+  button   Int? @default(0)
+  press    Int? @default(0)
+  delivery Int? @default(0)
+}
+
