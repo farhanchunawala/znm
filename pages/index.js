@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 const inter = Inter({ subsets: ['latin'] })
 import DisplayGallery from '../components/DisplayGallery'
-
+import footer from '../components/Footer'
 export default function Home() {
 	return (
 		<>
@@ -17,10 +17,10 @@ export default function Home() {
 		<main className={`${styles.homepage}`}>
 			{/* <h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1> */}
 			<div className={`${styles.box} ${styles.row}`}>
-				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="205" height="286" priority={true} />
+				<Image className={`${styles.img0}`} src="/img0.webp" alt="cloth" width="1200" height="600" priority={true} />
 			</div>
 			<DisplayGallery></DisplayGallery>
-			
+			<footer></footer>
 		</main>
 		</>
 	)

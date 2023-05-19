@@ -1,7 +1,14 @@
 @import 'mixins';
 
 .main {
-	
+	.box{
+		background: black;
+		width: 342px;
+		height: 270px;
+		padding: 16px;
+		padding-bottom: 32px;
+		margin: 24px;
+	}
 }
 
 // @media (max-width:768px) {
