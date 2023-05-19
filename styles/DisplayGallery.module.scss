@@ -4,7 +4,7 @@
 	background-color: #FAFAFA;
 	.container {
 		@include flexbox($flex-wrap:wrap);
-		padding: 8px;
+		// padding: 8px;
 		.frame {
 			@include flex-item($width:50%, $flex-grow:0, $flex-shrink:0);
 			padding: 16px;
