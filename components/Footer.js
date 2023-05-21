@@ -7,9 +7,8 @@ import Link from 'next/link'
 const Footer = () => {
     return (
 	<div className={`${styles.main}`}>
-		<div className={`${styles.box}`}>
-			
-		</div>
+		<NewsLetter></NewsLetter>
+		<FooterMenu></FooterMenu>
 	</div>
     )
 }
