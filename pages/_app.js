@@ -6,7 +6,7 @@ import SideNav from '../components/SideNav'
 export default function App({ Component, pageProps }) {
 	return (
 		<>
-			<Header></Header>
+			<SideNav></SideNav><Header></Header>
 			<Component {...pageProps} />
 			<Footer></Footer>
 		</>

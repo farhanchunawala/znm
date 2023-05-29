@@ -7,8 +7,10 @@ const NewsLetter = () => {
 	<div className={`${styles.main}`}>
 		<div className={`${styles.box}`}>
 			<h2>Sign up to our Whatsapp</h2>
-			<input type="tel" maxlength="10" id="number" placeholder="Enter phone number" min="10" max="10"/>
-			<button type="button" onclick="myFunction()">SUBSCRIBE</button>
+			<div className={`${styles.form}`}>
+				<input type="tel" maxlength="10" id="number" placeholder="Enter phone number" min="10" max="10"/>
+				<button type="button" onclick="myFunction()">SUBSCRIBE</button>
+			</div>
 		</div>
 	</div>
     )

@@ -12,6 +12,7 @@
 			@include text-style(null, null, 600);
 			text-decoration: none;
 			color: black;
+			font-family: madera ,sans-serif;
 		}
 	}
 	.heading {
@@ -21,6 +22,18 @@
 		padding-bottom: 30px;
 	}
 	
+}
+@media (max-width: $screen-sm) {
+	.main {
+		.box {
+		
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			
+			// margin: unset;
+		}
+	}
 }
 
 // @media (max-width:768px) {
