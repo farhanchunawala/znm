@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model cust {
+model user {
   sr         Int     @id
   name       String  @default("0") @db.VarChar(40)
   surname    String? @default("0") @db.VarChar(30)
@@ -94,7 +94,7 @@ model fit {
   @@id([sr, garbtype, fit])
 }
 
-model meas {
+model body_measure {
   sr             Int       @id
   measure_date   DateTime? @default(now()) @db.Timestamp(0)
   shoulder_ln    Float?    @db.Float
@@ -173,4 +173,3 @@ model task {
   press    Int? @default(0)
   delivery Int? @default(0)
 }
-
