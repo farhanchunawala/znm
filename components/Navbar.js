@@ -1,25 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/Navbar.module.scss'
+import SideNav from '../components/SideNav'
 import Link from 'next/link'
  
 const Navbar = () => {
+	const [isHidden, setIsHidden] = useState(true);
+	
+	const handleClick = () => {
+		setIsHidden(!isHidden);
+	};
+	
     return (
 	<div className={`${styles.main}`}>
-		<h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1>
+		<div className={`${styles.header}`}>
+			<svg onClick={handleClick} className={`${styles.hamburger}`} xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+				<path d="M4 23.9688H28V25.9688H4V23.9688Z" fill="black"/>
+				<path d="M4 15.9688H28V17.9688H4V15.9688Z" fill="black"/>
+				<path d="M4 7.96875H28V9.96875H4V7.96875Z" fill="black"/>
+			</svg>
+			<h1 className={`${styles.heading} ${styles.text}`}>ZOLL & METER</h1>
+		</div>
         <nav className={styles.mainnav}>
-            <div className={`${styles.box}`}>
+            <div className={`${styles.navbar}`}>
                 <Link className={`${styles.link}`} href='/'>Home</Link>
-				<Link className={`${styles.link}`} href='/customer-list'>Customer List</Link>
-				<Link className={`${styles.link}`} href='../SideNav'>Luxury Unstitched</Link>
-				<Link className={`${styles.link}`} href='/'>Kurtas</Link>
+				{/* <Link className={`${styles.link}`} href='/customer-list'>Customer List</Link> */}
+				{/* <Link className={`${styles.link}`} href='../SideNav'>Luxury Unstitched</Link> */}
+				<Link className={`${styles.link}`} href='/collections/kurtas'>Kurtas</Link>
 				<Link className={`${styles.link}`} href='/'>Sherwani</Link>
 				<Link className={`${styles.link}`} href='/'>Prince Coat</Link>
 				<Link className={`${styles.link}`} href='/'>Waist Coat</Link>
 				<Link className={`${styles.link}`} href='/'>Glossary</Link>
-				<Link className={`${styles.link}`} href='/'>Accessories</Link>
-				<Link className={`${styles.link}`} href='/'>Contact Us</Link>
+				{/* <Link className={`${styles.link}`} href='/'>Accessories</Link>
+				<Link className={`${styles.link}`} href='/'>Contact Us</Link> */}
             </div>
         </nav>
+		{isHidden ? null : (
+			<SideNav></SideNav>
+		)}
 	</div>
     )
 }

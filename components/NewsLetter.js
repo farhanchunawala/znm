@@ -8,8 +8,8 @@ const NewsLetter = () => {
 		<div className={`${styles.box}`}>
 			<h2>Sign up to our Whatsapp</h2>
 			<div className={`${styles.form}`}>
-				<input type="tel" maxlength="10" id="number" placeholder="Enter phone number" min="10" max="10"/>
-				<button type="button" onclick="myFunction()">SUBSCRIBE</button>
+				<input type="tel" maxLength="10" id="number" placeholder="Enter phone number" min="10" max="10"/>
+				<button type="button" onClick="myFunction()">SUBSCRIBE</button>
 			</div>
 		</div>
 	</div>
