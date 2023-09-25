@@ -4,15 +4,15 @@
 	.box {
 		background: black;
 		// width: 342px;
-		height: 270px;
-		padding: 16px;
+		// height: 270px;
+		padding: 40px;
 		padding-bottom: 32px;
-		margin: 24px;
 		// @include flex-item($width:auto, $flex-grow:auto, $flex-shrink:auto);
 		// @include flexbox($align-items:center, $align-content:center);
-		@include flex-item($width:90%, $flex-grow:0, $flex-shrink:0);
 		width: 100%;
-		margin: auto;
+		margin-top: 80px;
+		// @include flex-item($width:90%, $flex-grow:0, $flex-shrink:0);
+		// margin: 24px auto 48px;
 		h2 {
 			color: white;
 			margin-top: 34px;
@@ -54,7 +54,30 @@
 			align-content: center;
 			display: block;
 		}
-		
+		.location {
+			color: white;
+			font-weight: 400;
+			font-size: 12px;
+			// line-height: norma3l;
+			text-align: center;
+			margin-bottom: 30px;
+			svg {
+				height: 10px;
+				width: auto;
+				margin-right: 5px;
+			}
+		}
+		.social {
+			width: fit-content;
+			margin: 30px auto 0;
+			.app {
+				svg {
+					height: 20px;
+					width: auto;
+					margin: 0 8px;
+				}
+			}
+		}
 	}
 }
 

@@ -4,24 +4,25 @@
 	position: relative;
 	.box {
 		background-color: white;
-		position: absolute;
-		top: 0;
+		position: fixed;
+		top: 52px;
 		left: 0;
 		z-index: 5;
 		height: 650px;
 		width: 300px;
 		display: block;
-		border: 2px solid whitesmoke;
-		overflow: scroll;
+		border-right: 2px solid whitesmoke;
+		overflow: hidden;
+		padding-top: 8px;
 		}
 		.link {
-			@include text-style(null, null, bolder);
-			font-family: madera ,sans-serif;
-			font-size: 14px;
+			font-size: 16px;
+			line-height: normal;
+			font-weight: 600;
 			text-decoration: none;
 			color: black;
 			display: block;
-			padding: 14px;
+			padding: 16px;
 		}
 		.form {
 			input {

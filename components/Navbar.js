@@ -22,16 +22,14 @@ const Navbar = () => {
 		</div>
         <nav className={styles.mainnav}>
             <div className={`${styles.navbar}`}>
-                <Link className={`${styles.link}`} href='/'>Home</Link>
+                {/* <Link className={`${styles.link}`} href='/'>Home</Link> */}
 				{/* <Link className={`${styles.link}`} href='/customer-list'>Customer List</Link> */}
-				{/* <Link className={`${styles.link}`} href='../SideNav'>Luxury Unstitched</Link> */}
+				<Link className={`${styles.link}`} href='/collections/suits'>Suit</Link>
+				<Link className={`${styles.link}`} href='/collections/prince-coat'>Prince Coat</Link>
+				<Link className={`${styles.link}`} href='/collections/waist-coat'>Waist Coat</Link>
 				<Link className={`${styles.link}`} href='/collections/kurtas'>Kurtas</Link>
-				<Link className={`${styles.link}`} href='/'>Sherwani</Link>
-				<Link className={`${styles.link}`} href='/'>Prince Coat</Link>
-				<Link className={`${styles.link}`} href='/'>Waist Coat</Link>
-				<Link className={`${styles.link}`} href='/'>Glossary</Link>
-				{/* <Link className={`${styles.link}`} href='/'>Accessories</Link>
-				<Link className={`${styles.link}`} href='/'>Contact Us</Link> */}
+				<Link className={`${styles.link}`} href='/collections/shirts'>Shirts</Link>
+				<Link className={`${styles.link}`} href='/collections/trousers'>Trousers</Link>
             </div>
         </nav>
 		{isHidden ? null : (
