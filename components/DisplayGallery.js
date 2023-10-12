@@ -15,7 +15,7 @@ const DisplayGallery = ({ imageGrid }) => {
 							<p className={`${styles.imgtext}`}>{image.text}</p>
 						</div>
 					))}
-					<a className={`${styles.viewall}`} type="button" > VIEW ALL </a>
+					<a className={`${styles.viewall}`} type="button"> VIEW ALL </a>
 				</div>
 			</div>
 		</>

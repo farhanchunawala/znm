@@ -1,0 +1,94 @@
+@import 'mixins';
+
+.main {
+	background-color: $b91;
+	font-family: 'Poppins', sans-serif;
+	.brick {
+		background-color: #fff;
+		color: $b22;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		border: 2px solid $b22;
+		border-radius: 8px;
+		padding: 0 25px;
+		margin: 0 4px;
+		font-weight: 600;
+		font-size: 18px;
+		// letter-spacing: 0.2px;
+		text-wrap: nowrap;
+	}
+	.brick:hover {
+		background-color: $b22;
+		color: $b91;
+		font-weight: 600;
+	}
+	.header {
+		display: flex;
+		align-items: center;
+		padding: 4px 12px;
+		h3 {
+			color: $b22;
+		}
+		.meas {
+			margin-left: auto;
+		}
+	}
+	.section {
+		display: flex;
+		padding: 0 5px;
+	}
+	.style_tab {
+		width: 50%;
+		background-color: #fff;
+		// border: 2px solid $b79;
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+		border-radius: 8px;
+		padding: 10px 15px 0;
+		margin: 4px 5px 16px;
+		.frame {
+			overflow-x: auto;
+			height: fit-content;
+			.styles {
+				display: flex;
+				padding: 8px 0;
+			}
+			.style_card {
+				width: 100%;
+				color: $b22;
+				height: 50px;
+				// display: flex;
+				// align-items: center;
+				// border: 2px solid $b22;
+				border: 2px solid $b79;
+				border-radius: 8px;
+				padding: 10px 20px;
+				margin: 0 4px;
+				font-weight: 600;
+				font-size: 18px;
+				// letter-spacing: 0.2px;
+			}
+		}
+		.frame::-webkit-scrollbar {
+			display: none; /* Hide the scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+		}
+		// .frame::-webkit-scrollbar {
+		// 	width: 0.5em; /* Set the width of the scrollbar */
+		// }
+		// .frame::-webkit-scrollbar-thumb {
+		// 	background-color: transparent; /* Set the color of the thumb */
+		// }
+		// .frame::-webkit-scrollbar-track {
+		// 	background-color: transparent; /* Set the color of the track */
+		// }
+	}
+	.measure_tab {
+		background-color: #fff;
+		height: 100px;
+		width: 50%;
+		// border: 2px solid $b79;
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+		border-radius: 8px;
+		margin: 4px 5px 16px;
+	}
+}
