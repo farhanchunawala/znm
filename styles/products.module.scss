@@ -1,0 +1,28 @@
+@import 'mixins';
+
+.main {
+	font-family: 'Manrope';
+	.main_image {
+		width: calc(100% - 48px);
+		height: auto;
+		margin: 0 24px;
+	}
+	.notify {
+		background: #222;
+		width: calc(100% - 48px);
+		height: 48px;
+		margin: 16px auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.txt {
+			color: #FFF;
+			text-align: center;
+			// font-family: MS PGothic;
+			font-size: 16px;
+			font-weight: 400;
+			// line-height: 20px; /* 125% */
+			margin-left: 10px;
+		}
+	}
+}
