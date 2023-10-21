@@ -13,7 +13,7 @@ export default function Home() {
 			<div className={`${styles.title}`}>
 				<h1>Regular Fit polo Shirt</h1>
 			</div>
-			<p classname={`${styles.text}`}>sizes</p>
+			<p className={`${styles.text}`}>sizes</p>
 			<div className={`${styles.sizes}`}>
 				<div className={`${styles.size}`}>XS</div>
 				<div className={`${styles.size}`}>S</div>
