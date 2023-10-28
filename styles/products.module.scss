@@ -7,94 +7,175 @@
 		height: auto;
 		margin: 0 24px;
 	}
-	.title {
-		padding-left: 24px;
-		.product_name {
-			font-size: 16px;
-			font-weight: 500;
-			margin: 8px 0;
-			line-height: 1.25;
+	.add_product_form {
+		.title {
+			padding-left: 24px;
+			.product_name {
+				font-size: 16px;
+				font-weight: 500;
+				margin: 8px 0;
+				line-height: 1.25;
+			}
+			.mrp {
+				color: #707070;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 1.23;
+				margin-bottom: 2px;
+			}
+			.price {
+				color: #222;
+				font-size: 16px;
+				font-weight: 4  00;
+				line-height: 1.25;
+			}
 		}
-		.mrp {
-			color: #707070;
+		.sizes_text {
+			color: #222;
 			font-size: 13px;
 			font-weight: 400;
 			line-height: 1.23;
-			margin-bottom: 2px;
+			padding: 12px 24px 0;
 		}
-		.price {
-			color: #222;
-			font-size: 16px;
-			font-weight: 4  00;
-			line-height: 1.25;
+		.sizes {
+			// font-size: .8125rem;
+			// border: 1px;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 24px;
+			.size{
+				border: 1px solid $b82;
+				height: 40px;
+				// width: 100%;
+				font-size: .8125rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 8px 4px;
+				flex: 0 0 calc(25% - 8px);
+				max-width: calc(25% - 8px);
+			}
 		}
-	}
-	.text {
-		color: #222;
-		font-size: 13px;
-		font-weight: 400;
-		line-height: 1.23;
-		padding: 12px 24px 0;
-	}
-	.sizes {
-		// font-size: .8125rem;
-		// border: 1px;
-		display: flex;
-		flex-wrap: wrap;
-		padding: 0 24px;
-		.size{
-			border: 1px solid $b82;
-			height: 40px;
-			// width: 100%;
-			font-size: .8125rem;
+		.notify {
+			background: #222;
+			width: calc(100% - 48px);
+			height: 48px;
+			margin: 16px auto;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin: 8px 4px;
-			flex: 0 0 calc(25% - 8px);
-			max-width: calc(25% - 8px);
-		}
-	}
-	.notify {
-		background: #222;
-		width: calc(100% - 48px);
-		height: 48px;
-		margin: 16px auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		.txt {
-			color: #FFF;
-			text-align: center;
-			// font-family: MS PGothic;
-			font-size: 16px;
-			font-weight: 400;
-			// line-height: 20px; /* 125% */
-			margin-left: 10px;
-		}
-	}
-	.dnf {
-		border-top: solid #D0D0D0 1px;
-		.collapse {
-			display: flex;
-			.txt_dnf {
-				color: #222;
+			.txt {
+				color: #FFF;
+				text-align: center;
 				// font-family: MS PGothic;
 				font-size: 16px;
-				font-style: normal;
 				font-weight: 400;
-				line-height: 16px; /* 100% */
-				padding: 12px 24px;
-			}
-			svg {
-				float: right;
-				// padding: 4px 0;
-				margin: 16px 24px;
-				margin-left: auto;
+				// line-height: 20px; /* 125% */
+				margin-left: 10px;
 			}
 		}
-		.description {
-			padding: 0 24px;
+		.dnf {
+			border-top: solid #D0D0D0 1px;
+			.collapse {
+				display: flex;
+				.txt_dnf {
+					color: #222;
+					// font-family: MS PGothic;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 16px; /* 100% */
+					padding: 12px 24px;
+				}
+				svg {
+					float: right;
+					// padding: 4px 0;
+					margin: 16px 24px;
+					margin-left: auto;
+				}
+			}
+			.description {
+				padding: 0 24px;
+			}
+		}
+	}
+}
+@media (min-width: 576px) {
+	.main {
+		display: flex;
+		.add_product_form {
+			flex: 0 0 40%;
+			max-width: 40%;
+			.title {
+				.product_name {
+					color: #222;
+					// font-family: MS PGothic;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 20px; /* 125% */
+				}
+				.mrp {
+					line-height: 17px;
+					font-size: 13px;
+					// font-family: "HM Sans Regular","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+					font-weight: 400;
+					text-transform: none;
+				}
+				.price {
+					color: #222;
+					// font-family: MS PGothic;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 24px; /* 120% */
+			}
+			}
+			.sizes_text {
+				color: #222;
+				// font-family: MS PGothic;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 16px; /* 123.077% */
+			}
+			.sizes {
+				width: 390.39px;
+				height: 102px;
+				.size {
+					border: 1px solid #D0D0D0;
+					background: #E4E4E4;
+				}
+			}
+			.notify {
+				height: 48px;
+				padding: 14px 26px; 
+				.txt {
+					display: flex;
+					padding: 0px 119.1px 0px 113.77px;
+					align-items: flex-end;
+					gap: 10.52px;
+					align-self: stretch;
+				}
+			}
+			.dnf {
+				.collapse {
+					.txt_dnf {
+						color: #222;
+						// font-family: MS PGothic;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 16px; /* 100% */
+					}
+					svg {
+						float: right;
+						// padding: 4px 0;
+						margin: 16px 24px;
+						margin-left: auto;
+					}
+				}
+			}
 		}
 	}
 }
