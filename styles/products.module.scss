@@ -10,61 +10,31 @@
 	.title {
 		padding-left: 24px;
 		.product_name {
-			// display: flex;
-			// width: 159.26px;
-			width: 100%;
-			height: 20px;
-			flex-direction: column;
-			justify-content: center;
-			flex-shrink: 0;
-			font-size: 9px;
-			color: #222;
-			// font-family: MS PGothic;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 20px; /* 125% */
-			padding: 32px 0 24px 0px;
+			font-size: 16px;
+			font-weight: 500;
+			margin: 8px 0;
+			line-height: 1.25;
 		}
 		.mrp {
-			width: 100%;
-			height: 18px;
-			flex-direction: column;
-			justify-content: center;
-			flex-shrink: 0;
-			font-size: 7.5px;
 			color: #707070;
-			// font-family: MS PGothic;
-			font-style: normal;
-			font-weight: 100px;
-			line-height: 18px; /* 125% */
-			// padding: 32px 0 24px 24px;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 1.23;
+			margin-bottom: 2px;
 		}
 		.price {
-			// display: flex;
-			// width: 159.26px;
-			width: 100%;
-			height: 20px;
-			flex-direction: column;
-			justify-content: center;
-			flex-shrink: 0;
-			font-size: 16px;
 			color: #222;
-			// font-family: MS PGothic;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 20px; /* 125% */
-			padding: 0px 0 24px 0px;
+			font-size: 16px;
+			font-weight: 4  00;
+			line-height: 1.25;
 		}
 	}
 	.text {
 		color: #222;
-		// font-family: ;
-		font-size: 17px;
-		font-style: normal;
-		font-weight: 600;
-		line-height: 16px; /* 123.077% */
-		padding: 24px;
-		// margin: 24px;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 1.23;
+		padding: 12px 24px 0;
 	}
 	.sizes {
 		// font-size: .8125rem;
@@ -101,6 +71,30 @@
 			font-weight: 400;
 			// line-height: 20px; /* 125% */
 			margin-left: 10px;
+		}
+	}
+	.dnf {
+		border-top: solid #D0D0D0 1px;
+		.collapse {
+			display: flex;
+			.txt_dnf {
+				color: #222;
+				// font-family: MS PGothic;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 16px; /* 100% */
+				padding: 12px 24px;
+			}
+			svg {
+				float: right;
+				// padding: 4px 0;
+				margin: 16px 24px;
+				margin-left: auto;
+			}
+		}
+		.description {
+			padding: 0 24px;
 		}
 	}
 }

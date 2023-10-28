@@ -11,15 +11,9 @@ export default function Home() {
 		<main className={`${styles.main}`}>
 			<Image className={`${styles.main_image}`} src="/product.png" alt="" width="205" height="286" />
 			<div className={`${styles.title}`}>
-				<div className={`${styles.product_name}`}>
-					<h1>Regular Fit polo Shirt</h1>
-				</div>
-				<div className={`${styles.mrp}`}>
-					<h1>MRP inclusive of all taxes</h1>
-				</div>
-				<div className={`${styles.price}`}>
-                    <hi>Rs. 1200.00</hi>
-				</div>
+				<h1 className={`${styles.product_name}`}>Regular Fit polo Shirt</h1>
+				<p className={`${styles.mrp}`}>MRP inclusive of all taxes</p>
+                <p className={`${styles.price}`}>Rs. 1200.00</p>
 			</div>
 			<p className={`${styles.text}`}>sizes</p>
 			<div className={`${styles.sizes}`}>
@@ -46,6 +40,17 @@ export default function Home() {
 					</defs>
 				</svg>
 				<p className={`${styles.txt}`}>NOTIFY ME</p> */}
+			</div>
+			<div className={`${styles.dnf}`}>
+				<div className={`${styles.collapse}`}>
+					<p className={`${styles.txt_dnf}`}>Description & Fit</p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+						<path d="M7.99992 12.4499C7.93054 12.45 7.8619 12.4356 7.79837 12.4078C7.73485 12.3799 7.67782 12.3391 7.63092 12.2879L2.13092 6.28793C2.04127 6.19006 1.99418 6.0606 1.99999 5.92801C2.00581 5.79542 2.06405 5.67057 2.16192 5.58093C2.25978 5.49129 2.38925 5.44419 2.52184 5.45C2.65443 5.45582 2.77927 5.51406 2.86892 5.61193L7.99992 11.2099L13.1309 5.61193C13.2206 5.51406 13.3454 5.45582 13.478 5.45C13.6106 5.44419 13.7401 5.49129 13.8379 5.58093C13.9358 5.67057 13.994 5.79542 13.9998 5.92801C14.0057 6.0606 13.9586 6.19006 13.8689 6.28793L8.36892 12.2879C8.32202 12.3391 8.26499 12.3799 8.20146 12.4078C8.13793 12.4356 8.0693 12.45 7.99992 12.4499Z" fill="#222222"/>
+					</svg>
+				</div>
+				<div className={`${styles.description}`}>
+					<p>Polo shirt in soft, fine-knit cotton. Regular fit with a collar, button placket and long sleeves. Fine ribbing at the cuffs and hem.</p>
+				</div>
 			</div>
 		</main>
 		</>
