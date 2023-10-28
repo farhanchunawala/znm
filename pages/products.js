@@ -11,7 +11,15 @@ export default function Home() {
 		<main className={`${styles.main}`}>
 			<Image className={`${styles.main_image}`} src="/product.png" alt="" width="205" height="286" />
 			<div className={`${styles.title}`}>
-				<h1>Regular Fit polo Shirt</h1>
+				<div className={`${styles.product_name}`}>
+					<h1>Regular Fit polo Shirt</h1>
+				</div>
+				<div className={`${styles.mrp}`}>
+					<h1>MRP inclusive of all taxes</h1>
+				</div>
+				<div className={`${styles.price}`}>
+                    <hi>Rs. 1200.00</hi>
+				</div>
 			</div>
 			<p className={`${styles.text}`}>sizes</p>
 			<div className={`${styles.sizes}`}>
