@@ -8,9 +8,9 @@ datasource db {
 }
 
 model user {
-  sr         Int     @id
-  name       String  @default("0") @db.VarChar(40)
-  surname    String? @default("0") @db.VarChar(30)
+  sr         Int     @id @default(autoincrement())
+  name       String? @default("") @db.VarChar(40)
+  surname    String? @default("") @db.VarChar(30)
   mobile_no1 BigInt? @default(0)
   mobile_no2 BigInt? @default(0)
   mobile_no3 BigInt? @default(0)
