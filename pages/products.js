@@ -14,7 +14,7 @@ export default function Home() {
 				<div className={`${styles.title}`}>
 					<h1 className={`${styles.product_name}`}>Regular Fit polo Shirt</h1>
 					<p className={`${styles.mrp}`}>MRP inclusive of all taxes</p>
-					<p className={`${styles.price}`}>Rs. 1200.00</p>
+					<p className={`${styles.price}`}>Rs. 0000.00</p>
 				</div>
 				<p className={`${styles.sizes_text}`}>sizes</p>
 				<div className={`${styles.sizes}`}>

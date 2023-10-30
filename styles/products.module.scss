@@ -38,15 +38,12 @@
 			padding: 12px 24px 0;
 		}
 		.sizes {
-			// font-size: .8125rem;
-			// border: 1px;
 			display: flex;
 			flex-wrap: wrap;
 			padding: 0 24px;
 			.size{
 				border: 1px solid $b82;
 				height: 40px;
-				// width: 100%;
 				font-size: .8125rem;
 				display: flex;
 				justify-content: center;
@@ -67,10 +64,8 @@
 			.txt {
 				color: #FFF;
 				text-align: center;
-				// font-family: MS PGothic;
 				font-size: 16px;
 				font-weight: 400;
-				// line-height: 20px; /* 125% */
 				margin-left: 10px;
 			}
 		}
@@ -80,16 +75,13 @@
 				display: flex;
 				.txt_dnf {
 					color: #222;
-					// font-family: MS PGothic;
 					font-size: 16px;
-					font-style: normal;
 					font-weight: 400;
-					line-height: 16px; /* 100% */
+					line-height: 16px;
 					padding: 12px 24px;
 				}
 				svg {
 					float: right;
-					// padding: 4px 0;
 					margin: 16px 24px;
 					margin-left: auto;
 				}
@@ -109,35 +101,28 @@
 			.title {
 				.product_name {
 					color: #222;
-					// font-family: MS PGothic;
 					font-size: 16px;
-					font-style: normal;
 					font-weight: 400;
-					line-height: 20px; /* 125% */
+					line-height: 20px;
 				}
 				.mrp {
 					line-height: 17px;
 					font-size: 13px;
-					// font-family: "HM Sans Regular","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 					font-weight: 400;
 					text-transform: none;
 				}
 				.price {
 					color: #222;
-					// font-family: MS PGothic;
 					font-size: 20px;
-					font-style: normal;
 					font-weight: 400;
-					line-height: 24px; /* 120% */
+					line-height: 24px;
 			}
 			}
 			.sizes_text {
 				color: #222;
-				// font-family: MS PGothic;
 				font-size: 13px;
-				font-style: normal;
 				font-weight: 400;
-				line-height: 16px; /* 123.077% */
+				line-height: 16px;
 			}
 			.sizes {
 				width: 390.39px;
@@ -162,15 +147,12 @@
 				.collapse {
 					.txt_dnf {
 						color: #222;
-						// font-family: MS PGothic;
 						font-size: 16px;
-						font-style: normal;
 						font-weight: 400;
-						line-height: 16px; /* 100% */
+						line-height: 16px;
 					}
 					svg {
 						float: right;
-						// padding: 4px 0;
 						margin: 16px 24px;
 						margin-left: auto;
 					}
