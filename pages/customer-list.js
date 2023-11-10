@@ -29,20 +29,22 @@ export default function Home({users}) {
 				</div>
 			</div>
 			<div className={`${styles.list}`}>
-				<div className={`${styles.row}`}>
-					<div className={`${styles.cell}`}>
-						<p>00786</p>
+				{users.map(user => (
+					<div className={`${styles.row}`} key={user.id}>
+						<div className={`${styles.cell}`}>
+							<p>{user.sr}</p>
+						</div>
+						<div className={`${styles.cell}`}>
+							<p>{user.name}</p>
+						</div>
+						<div className={`${styles.cell}`}>
+							<p>{user.surname}</p>
+						</div>
+						<div className={`${styles.cell}`}>
+							<p>{user.mobile_no1}</p>
+						</div>
 					</div>
-					<div className={`${styles.cell}`}>
-						<p>furqan</p>
-					</div>
-					<div className={`${styles.cell}`}>
-						<p>chunawala</p>
-					</div>
-					<div className={`${styles.cell}`}>
-						<p>8291782197</p>
-					</div>
-				</div>
+				))}
 			</div>
 			{/* <ul>
 				{users.map(user => (
